@@ -11,6 +11,5 @@
 
 Tujuan projek ini dibuat adalah untuk mengedukasi masyarakat tentang penanganan COVID 19, dan tambahan Fitur Pelaporan yang bagus disaat di lingkungan USER ada yang terinfeksi. Serta ada tampilan data dari jumlah orang yang terinfeksi, Sembuh, dan meninggal.
 
-    - || Disini kami menggunakan Laravel sebagai BackEnd nya || -
     
 
