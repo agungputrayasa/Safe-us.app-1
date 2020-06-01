@@ -19,6 +19,8 @@ Route::get('/', function () {
 
 
 // == Route Index == //
-Route::get('Home', function () {
+Route::get('/Home', function () {
     return view('master');
 });
+
+Route::get('/Home/Data-Statistic', 'HomeController@data_statistic');
