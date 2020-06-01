@@ -359,10 +359,10 @@
                     for many countries around the world.</p>
                     <div class="row btn-footer">
                         <div class="col-md-6 btn-double" style="text-align: right">
-                            <button class="btn btnme4a btn-call"><i class="fas fa-phone-alt"></i> &nbsp;Call Hotline</button>
+                            <a href="#" class="btn btnme4a btn-call"><i class="fas fa-phone-alt"></i> &nbsp;Call Hotline</a>
                         </div>
                         <div class="col-md-6 btn-double2" style="text-align: left">
-                            <button class="btn btnme4b btn-call2"><i class="far fa-file-alt"></i> &nbsp;Crate Report</button>
+                            <a href="#" class="btn btnme4b btn-call2"><i class="far fa-file-alt"></i> &nbsp;Crate Report</a>
                         </div>
                     </div>
                 </div>
