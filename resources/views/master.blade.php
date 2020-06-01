@@ -1,6 +1,6 @@
 <?php
-    // $url = file_get_contents('https://api.kawalcorona.com/indonesia/');
-    // $data = json_decode($url,true);
+    $url = file_get_contents('https://api.kawalcorona.com/indonesia/');
+    $data = json_decode($url,true);
 ?>
 
 <!DOCTYPE html>
@@ -42,7 +42,7 @@
                         <a class="nav-item nav-link" href="#">Prevention</a>
                         <a class="nav-item nav-link" href="/Home/Data-Statistic">Data-Statistic</a>
                         <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">|</a>
-                        <button class="btn btnme btn-navbar"><i class="fas fa-phone-alt"></i> &nbsp;Emergency Call</button>
+                        <a href="#" class="btn btnme btn-navbar"><i class="fas fa-phone-alt"></i> &nbsp;Emergency Call</a>
                     </div>
                 </div>
             </div>
@@ -90,19 +90,19 @@
                     </div>
                     <div class="col-md-3 data-center">
                         <div class="counter">
-                            <span class="data-value" id="value-1" style="color: black">12112</span>
+                            <span class="data-value" id="value-1" style="color: black"><?php echo $data[0]['positif'] ?></span>
                             <p class="data-desc" style="color: black">Confirmed Cases</p>
                         </div>
                     </div>
                     <div class="col-md-3 data-center">
                         <div class="counter">
-                            <span class="data-value" id="value-2" style="color:#4CD137">2212</span>
+                            <span class="data-value" id="value-2" style="color:#4CD137"><?php echo $data[0]['sembuh'] ?></span>
                             <p class="data-desc" style="color:#4CD137">Recovered Cases</p>
                         </div>
                     </div>
                     <div class="col-md-3 data-center">
                         <div class="counter">
-                            <span class="data-value" id="value-3" style="color: #E84118">12</span>
+                            <span class="data-value" id="value-3" style="color: #E84118"><?php echo $data[0]['meninggal'] ?></span>
                             <p class="data-desc" style="color: #E84118">Death Cases</p>
                         </div>
                     </div>
