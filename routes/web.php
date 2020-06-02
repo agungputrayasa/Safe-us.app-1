@@ -25,5 +25,6 @@ Route::get('/Home', function () {
 
 Route::get('/Home/Data-Statistic', 'HomeController@data_statistic');
 
-// route baru
-Route::get('form', 'FormController@form');
+// Route Form
+
+Route::get('/Home/Form', 'HomeController@form');

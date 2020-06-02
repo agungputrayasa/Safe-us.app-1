@@ -1,3 +1,28 @@
+    <?php
+        $data = file_get_contents("https://api.kawalcorona.com/indonesia/provinsi/");
+        $data = json_decode($data, TRUE);
+
+        $total = count($data);
+        $nomor = 1;
+
+        for($i = 0;$i < $total;$i++){
+
+            $hasil = $data[$i]['attributes'];
+?>
+    <tr>
+        <td><?=$nomor++?></td>
+        <td><?=$hasil['Provinsi']?></td>
+        <td><?=$hasil['Kasus_Posi']?></td>
+        <td><?=$hasil['Kasus_Semb']?></td>
+        <td><?=$hasil['Kasus_Meni']?></td>
+    </tr>
+
+
+
+    <?php
+        }
+    ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,11 +66,55 @@
         </div>
     </nav>
 
+{{-- == Data Table Covid == --}}
 
-
-
+    <div class="container area-data-covid">
+        <div class="card">
+            <div class="card-header bg-danger text-white">
+                <h6>Data Kasus COVID-19 di Indonesia Berdasarkan Provinsi</h6>
+            </div>
+            <div class="card-body">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Nama Provinsi</th>
+                            <th>Positif</th>
+                            <th>Sembuh</th>
+                            <th>Meninggal</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-data">
+                        {{-- @foreach ($collection as $item)
+                            
+                        @endforeach --}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+    </div>
 
     {{-- Added Script --}}
+    {{-- <script>
+        $(document).ready(function(){
+            semuaData();
+
+            function semuaData(){
+                $.ajax({
+                    url : '',
+                    type : 'GET',
+                    success : function(data){
+                        try{
+                            $('#table-data').html(data)
+                        }catch{
+                            alert('Error Bre!');
+                        }
+                    }
+                });
+            }
+        });
+    </script> --}}
 
     <script src="https://kit.fontawesome.com/0ef25f29a7.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

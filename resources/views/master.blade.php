@@ -1,6 +1,6 @@
 <?php
-    $url = file_get_contents('https://api.kawalcorona.com/indonesia/');
-    $data = json_decode($url,true);
+    // $url = file_get_contents('https://api.kawalcorona.com/indonesia/');
+    // $data = json_decode($url,true);
 ?>
 
 <!DOCTYPE html>
@@ -42,7 +42,7 @@
                         <a class="nav-item nav-link" href="#">Prevention</a>
                         <a class="nav-item nav-link" href="/Home/Data-Statistic">Data-Statistic</a>
                         <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">|</a>
-                        <a href="#" class="btn btnme btn-navbar"><i class="fas fa-phone-alt"></i> &nbsp;Emergency Call</a>
+                        <a href="/Home/Form" class="btn btnme btn-navbar"><i class="fas fa-phone-alt"></i> &nbsp;Emergency Call</a>
                     </div>
                 </div>
             </div>
@@ -90,19 +90,19 @@
                     </div>
                     <div class="col-md-3 data-center">
                         <div class="counter">
-                            <span class="data-value" id="value-1" style="color: black"><?php echo $data[0]['positif'] ?></span>
+                            <span class="data-value" id="value-1" style="color: black">12</span>
                             <p class="data-desc" style="color: black">Confirmed Cases</p>
                         </div>
                     </div>
                     <div class="col-md-3 data-center">
                         <div class="counter">
-                            <span class="data-value" id="value-2" style="color:#4CD137"><?php echo $data[0]['sembuh'] ?></span>
+                            <span class="data-value" id="value-2" style="color:#4CD137">12</span>
                             <p class="data-desc" style="color:#4CD137">Recovered Cases</p>
                         </div>
                     </div>
                     <div class="col-md-3 data-center">
                         <div class="counter">
-                            <span class="data-value" id="value-3" style="color: #E84118"><?php echo $data[0]['meninggal'] ?></span>
+                            <span class="data-value" id="value-3" style="color: #E84118">12</span>
                             <p class="data-desc" style="color: #E84118">Death Cases</p>
                         </div>
                     </div>
@@ -362,7 +362,7 @@
                             <a href="#" class="btn btnme4a btn-call"><i class="fas fa-phone-alt"></i> &nbsp;Call Hotline</a>
                         </div>
                         <div class="col-md-6 btn-double2" style="text-align: left">
-                            <a href="#" class="btn btnme4b btn-call2"><i class="far fa-file-alt"></i> &nbsp;Crate Report</a>
+                            <a href="/Home/Form" class="btn btnme4b btn-call2"><i class="far fa-file-alt"></i> &nbsp;Crate Report</a>
                         </div>
                     </div>
                 </div>
@@ -420,6 +420,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
 
     {{-- <script>
         document.addEventListener("DOMContentLoaded", () => {
