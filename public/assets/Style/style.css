@@ -42,11 +42,18 @@
     margin-bottom: -8px;
 }
 
+html,
+body,
+header,
+.view {
+    scroll-behavior: smooth;
+}
+
 
 /* =={ Konten 1A }== */
 
 .working-area>.content-area>.area-left {
-    margin-top: 180px;
+    margin-top: 210px;
     float: left;
 }
 
@@ -100,7 +107,7 @@
 /* =={ Konten 1B }== */
 
 .working-area>.content-area>.area-right {
-    margin-top: 5px;
+    margin-top: 40px;
 }
 
 
@@ -367,14 +374,14 @@
     font-size: 38px;
     font-weight: 600;
     color: #4f4f4f;
-    margin-top: 15px;
+    margin-top: 10px;
     text-align: center;
 }
 
 .area-working5th>.content-area-5th>.content5th>.desc-covid-5 {
     font-size: 14px;
     color: #7a7a8f;
-    margin-top: 15px;
+    margin-top: 10px;
     text-align: center;
 }
 

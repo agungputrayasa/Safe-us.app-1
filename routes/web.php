@@ -13,18 +13,28 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// ===[Route Tampilan all Page]=== //
+
 Route::get('/', function () {
     return view('welcome');
 });
 
-
-// == Route Index == //
 Route::get('/Home', function () {
     return view('master');
 });
 
-Route::get('/Home/Data-Statistic', 'HomeController@data_statistic');
+Route::get('/Dashboard', function () {
+    return view('dashboard');
+});
 
-// Route Form
+Route::get('/Home/Data-Statistic', 'HomeController@data_status');
+
 
 Route::get('/Home/Form', 'HomeController@form');
+
+Route::get('/Data', 'CovidController@chart');
+
+
+// ===[Route CRUD]=== //
+
+Route::post('/Home/Store', 'HomeController@store');

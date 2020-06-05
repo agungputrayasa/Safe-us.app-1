@@ -54,7 +54,8 @@
     </div>
 
     <div class="container mt-5">
-        <form action="" method="POST" class="main-form needs-validation" enctype="multipart/form-data" novalidate>
+        <form action="/Home/Store" method="POST" class="main-form needs-validation" enctype="multipart/form-data" novalidate>
+            {{ csrf_field() }}
             <div class="row field justify-content-center">
                 <div class="col-md-4">
                     <label for="username" class="label">Username</label>
@@ -73,7 +74,7 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="inputGroupPrepend">+62</span>
                         </div>
-                        <input type="tel" pattern="^\d{4}-\d{4}-\d{4}$" class="form-control" id="phone" aria-describedby="inputGroupPrepend" name="phone" required>
+                        <input type="tel" pattern="^\d{4}-\d{4}-\d{4}$" class="form-control" id="phone" aria-describedby="inputGroupPrepend" name="phonemu" required>
                         <div class="invalid-feedback">
                             Masukan Nomor yang Benar!
                         </div>
@@ -84,8 +85,8 @@
                     <input type="text" class="form-control" id="umurkamu" name="umurkamu" placeholder="Enter your age...">
                 </div>
                 <div class="col-md-2">
-                    <label for="umur" class="label">Your Job</label>
-                    <select class="browser-default custom-select">
+                    <label for="choose" class="label">Your Job</label>
+                    <select class="browser-default custom-select" name="choose">
                         <option selected>Click Button</option>
                         <option value="1">Private employees</option>
                         <option value="2">Businessman</option>
@@ -136,8 +137,8 @@
                     </div>
                 </div>
                 <div class="col-md-2">
-                    <label for="umur" class="label">Your Age</label>
-                    <input type="text" class="form-control" id="umurkamu" name="umurkamu" placeholder="Enter your age...">
+                    <label for="umur" class="label">Age</label>
+                    <input type="text" class="form-control" id="umurkamu" name="umur" placeholder="Enter your age...">
                 </div>
             </div>
             <div class="row field-address justify-content-center mt-4">
@@ -191,11 +192,13 @@
 
 
 
-    {{-- Add Script --}}
+{{-- ======= Javascript CORE 
+===================================--}}
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
     <script src="{{asset('assets/Js/main.js')}}" type="text/javascript"></script>
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <script src="https://kit.fontawesome.com/0ef25f29a7.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
