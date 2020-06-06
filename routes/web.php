@@ -27,13 +27,9 @@ Route::get('/Dashboard', function () {
     return view('dashboard');
 });
 
-Route::get('/Home/Data-Statistic', 'HomeController@data_status');
-
+Route::get('/Home/Data-Statistic', 'CovidController@chart');
 
 Route::get('/Home/Form', 'HomeController@form');
-
-Route::get('/Data', 'CovidController@chart');
-
 
 // ===[Route CRUD]=== //
 

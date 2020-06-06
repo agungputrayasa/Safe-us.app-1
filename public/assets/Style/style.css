@@ -689,3 +689,101 @@ header,
     padding: 5px 10px;
     width: 100px;
 }
+
+
+/* {{-- == Data Table Covid == --}} */
+
+.area-data-covid .dataContentTitle {
+    margin-top: 40px;
+}
+
+.area-data-covid .dataContentTitle .covidIndo span {
+    color: #e84118;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 7px 7px;
+    border-radius: 10px 10px 10px 10px;
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.area-data-covid>.dataContentTitle>.covidIndo>.covidTitle {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 35px;
+    color: #4f4f4f;
+}
+
+.area-data-covid>.dataContentTitle>.covidIndo>.covidMessage {
+    font-size: 12px;
+    color: #7a7a8f;
+    letter-spacing: 0px;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+
+/*{{-- == Data Table Covid CARD== --}}*/
+
+.datacard .cardWorking .cardReport .content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.dataCard .cardWorking .listCard .cardReport {
+    background: url("/assets/Dist/Icon/Chart.png");
+    background-size: cover;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1), -3px -3px 15px #ffffff;
+    border-radius: 10px !important;
+    transition: 0.8s;
+}
+
+.dataCard .cardWorking .listCard .cardReport:hover {
+    transform: translateY(-10px);
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1), -3px -3px 15px #ffffff;
+}
+
+.dataCard .cardWorking .listCard .cardReport .content img {
+    margin-top: 5px;
+    float: left;
+    margin-right: 12px;
+}
+
+.dataCard .cardWorking .listCard .cardReport .content .title-items {
+    font-size: 18px;
+    margin-top: 5px;
+    color: #21272c;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.dataCard .cardWorking .listCard .cardReport .content .subtitle-items {
+    font-size: 13px;
+    color: #b4b4b4;
+    font-weight: 300;
+    margin-top: -15px;
+    margin-left: 10px;
+}
+
+.dataCard .cardWorking .listCard .cardReport .content .value-items {
+    font-size: 38px;
+    color: #21272c;
+    font-weight: 600;
+    margin: 0;
+    clear: both;
+    float: left;
+    margin-right: 10px;
+}
+
+.dataCard .cardWorking .listCard .cardReport .content .desc-items {
+    font-size: 18px;
+    color: #b4b4b4;
+    font-weight: 300;
+    margin: 0;
+    margin-top: 25px;
+}
+
+.container .cardContent2 .card {
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: none;
+}
