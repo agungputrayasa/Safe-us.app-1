@@ -1,7 +1,7 @@
 <?php
     // ====- REST API DATA PROVINSI
-        // $data = file_get_contents("https://api.kawalcorona.com/indonesia/provinsi/");
-        // $data = json_decode($data, TRUE);
+        $data = file_get_contents("https://api.kawalcorona.com/indonesia/provinsi/");
+        $data = json_decode($data, TRUE);
 
    // ====- REST API DATA INDONESIA
         $dataList = file_get_contents("https://api.kawalcorona.com/indonesia/");
@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
 
     {{-- ====- LOCAL STYLE -===
 ====================================--}}
@@ -82,13 +83,13 @@
                         <div class="content col-md-12">
                             <img src="{{asset('assets/Dist/Icon/Positif.svg')}}" height="50" alt="">
                         <p class="title-items">
-                            Positif Cases
+                            Positive Cases
                         </p>
                         <p class="subtitle-items">
                             Data-Update
                         </p>
                         <p class="value-items">
-                            <?php echo $dataList[0]['positif'] ?>
+                            <?php echo $dataList[0]['positif']?>
                         </p>
                         <p class="desc-items">
                             Person
@@ -109,7 +110,7 @@
                             Data-Update
                         </p>
                         <p class="value-items">
-                            <?php echo $dataList[0]['sembuh'] ?>
+                            <?php echo $dataList[0]['sembuh']?>
                         </p>
                         <p class="desc-items">
                             Person
@@ -130,7 +131,7 @@
                             Data-Update
                         </p>
                         <p class="value-items">
-                            <?php echo $dataList[0]['meninggal'] ?>
+                            <?php echo $dataList[0]['meninggal']?>
                         </p>
                         <p class="desc-items">
                             Person
@@ -151,7 +152,7 @@
                             Data-Update
                         </p>
                         <p class="value-items">
-                            <?php echo $dataList[0]['dirawat'] ?>
+                            <?php echo $dataList[0]['dirawat']?>
                         </p>
                         <p class="desc-items">
                             Person
@@ -180,7 +181,7 @@
                         <h6>Data Kasus COVID-19 di Indonesia Berdasarkan Provinsi</h6>
                     </div>
                     <div class="card-body">
-                        <table class="table table-bordered">
+                        <table class="table table-bordered display" id="dataList">
                             <thead>
                                 <tr>
                                     <th>No.</th>
@@ -191,7 +192,7 @@
                                     <th>Meninggal</th>
                                 </tr>
                             </thead>
-                            {{-- <tbody id="table-data">
+                            <tbody id="table-data">
                                 @php
                                     $i=1;
                                 @endphp
@@ -210,18 +211,30 @@
                                         $i++;
                                     @endphp
                                 @endforeach
-                            </tbody> --}}
+                            </tbody>
                         </table>
+                        <script>
+                            $(document).ready(function(){
+                                $('#dataList').DataTable();
+                            });
+                        </script>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <br><br><br><br>
+    <div class="mt-1 text-center">
+        <p>Copyright &copy2020 All rights reserved | #AmanDiRumah</p>
+    </div>
     
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js" charset="utf-8"></script>
     {!! $chart->script() !!}
+    
     <script src="https://kit.fontawesome.com/0ef25f29a7.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>

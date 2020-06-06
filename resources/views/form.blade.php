@@ -19,26 +19,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white" id="navbar">
-        <div class="container">
-                <a href="/Home" class="btn btn3c btn-navbar3c"><i class="fas fa-sign-out-alt"></i> &nbsp;Back To Home</a>
-                <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">|</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ml-auto">
-                    <a class="nav-item nav-link active hidden-none" href="#"><span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="#"></a>
-                    <a class="nav-item nav-link" href="#"></a>
-                    <a class="nav-item nav-link" href="#"></a>
-                    <a class="nav-item nav-link" href="#"></a>
-                    <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">|</a>
-                    <button class="btn btnme btn-navbar" id="clock"></button>
+    <header class="navbarController">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top scrolling-navbar" id="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="{{ asset('assets/Dist/Icon/Safe-us.png') }}" width="160" height="52" class="d-inline-block align-top" alt="" loading="lazy">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Sticky-nav" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="Sticky-nav">
+                    <div class="navbar-nav nav-2 ml-auto">
+                        <a class="nav-item nav-link active" href="/Home"><i class="fa fa-caret-left" aria-hidden="true"></i> Back to home</a>
+                        <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">|</a>
+                        <a class="nav-item nav-link disabled" href="#" id="clock">|</a>
+                    </div>
                 </div>
             </div>
+        </nav>
+        <div class="view">
+            <div class="flex-center">
+                <a href="#scroll" class="btn btn-primary">scrollDown</a>
+            </div>
         </div>
-    </nav>
+    </header>
+
 
     {{-- [Form-Pelaporan] --}}
     
