@@ -1,7 +1,8 @@
-<?php
+@php
     // $url = file_get_contents('https://api.kawalcorona.com/indonesia/');
     // $data = json_decode($url,true);
-?>
+@endphp
+  
 
 <!DOCTYPE html>
 <html lang="en">
@@ -26,29 +27,37 @@
 <body>
 
         {{--=== Navbar Website ===--}}
-        <nav class="navbar navbar-expand-lg navbar-light bg-white" id="navbar">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top scrolling-navbar" id="navbar">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="{{ asset('assets/Dist/Icon/Safe-us.png') }}" width="160" height="52" class="d-inline-block align-top" alt="" loading="lazy">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Sticky-nav" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="collapse navbar-collapse" id="Sticky-nav">
                     <div class="navbar-nav ml-auto">
                         <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                        <a class="nav-item nav-link" href="#">Symptoms</a>
-                        <a class="nav-item nav-link" href="#">Contagion</a>
-                        <a class="nav-item nav-link" href="#">Prevention</a>
+                        <a class="nav-item nav-link" href="#Symptoms">Symptoms</a>
+                        <a class="nav-item nav-link" href="#Contagion">Contagion</a>
+                        <a class="nav-item nav-link" href="#Prevention">Prevention</a>
                         <a class="nav-item nav-link" href="/Home/Data-Statistic">Data-Statistic</a>
                         <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">|</a>
-                        <button class="btn btnme btn-navbar"><i class="fas fa-phone-alt"></i> &nbsp;Emergency Call</button>
+                        <a href="/Home/Form" class="btn btnme btn-navbar"><i class="fas fa-phone-alt"></i> &nbsp;Emergency Call</a>
                     </div>
                 </div>
             </div>
         </nav>
+        <div class="view">
+            <div class="flex-center">
+                <a href="#scroll" class="btn btn-primary">scrollDown</a>
+            </div>
+        </div>
+    </header>
 
         {{--=== Content 1 ===--}}
+    <main id="scroll">
         <div class="container">
             <div class="working-area">
                 <div class="row content-area">
@@ -90,13 +99,13 @@
                     </div>
                     <div class="col-md-3 data-center">
                         <div class="counter">
-                            <span class="data-value" id="value-1" style="color: black">12112</span>
+                            <span class="data-value" id="value-1" style="color: black">12</span>
                             <p class="data-desc" style="color: black">Confirmed Cases</p>
                         </div>
                     </div>
                     <div class="col-md-3 data-center">
                         <div class="counter">
-                            <span class="data-value" id="value-2" style="color:#4CD137">2212</span>
+                            <span class="data-value" id="value-2" style="color:#4CD137">12</span>
                             <p class="data-desc" style="color:#4CD137">Recovered Cases</p>
                         </div>
                     </div>
@@ -136,7 +145,7 @@
         </div>
 
         {{-- == Content 3 == --}}
-        <div class="container">
+        <div class="container" id="Symptoms">
             <div class="area-working3rd" style="margin-top: 50px;">
                 <div class="row content3rd">
                     <div class="col-md-6 dist3rd-left">
@@ -166,8 +175,7 @@
         </div>
 
         {{-- == Content 4 CARD-Animation == --}}
-
-        <section class="jumbotron">
+        <section class="jumbotron" id="Contagion">
             <div class="container card-content">
                 <div class="row area-working4th">
                     <div class="col-md-5 content1-4th">
@@ -260,11 +268,11 @@
         </section>
 
         <br><br>
-
-        <section class="container">
+        {{-- Content 5 --}}
+        <section class="container" id="Prevention">
             <div class="area-working5th">
                 <div class="row content-area-5th">
-                    <div class="col-md-12 content-backup d-flex justify-content-center">
+                    <div class="col-md-12 content-backup mt-5 d-flex justify-content-center">
                         <span class="badge badge-info"><i class="fas fa-info-circle"></i> Covid-19 Prevention</span>
                     </div>
                     <div class="col-md-12 content5th">
@@ -275,7 +283,7 @@
                 </div>
 
                 {{-- == Card 1 == --}}
-                <div class="row card-content">
+                <div class="row card-content" style="margin-top: -30px">
                     <div class="col-md-6 mb-4 card-long">
                         <div class="card-image">
                             <img src="{{asset('assets/Dist/Icon/Prevention 1.png')}}" width="87px" alt="">
@@ -347,6 +355,7 @@
                 </div>
             </div>
         </section>
+    </main>
 
         <br><br><br><br>
         <br><br><br><br>
@@ -359,10 +368,10 @@
                     for many countries around the world.</p>
                     <div class="row btn-footer">
                         <div class="col-md-6 btn-double" style="text-align: right">
-                            <button class="btn btnme4a btn-call"><i class="fas fa-phone-alt"></i> &nbsp;Call Hotline</button>
+                            <a href="#" class="btn btnme4a btn-call"><i class="fas fa-phone-alt"></i> &nbsp;Call Hotline</a>
                         </div>
                         <div class="col-md-6 btn-double2" style="text-align: left">
-                            <button class="btn btnme4b btn-call2"><i class="far fa-file-alt"></i> &nbsp;Crate Report</button>
+                            <a href="/Home/Form" class="btn btnme4b btn-call2"><i class="far fa-file-alt"></i> &nbsp;Crate Report</a>
                         </div>
                     </div>
                 </div>
@@ -420,6 +429,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
 
     {{-- <script>
         document.addEventListener("DOMContentLoaded", () => {

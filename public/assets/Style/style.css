@@ -1,0 +1,789 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar-nav>.nav-item {
+    color: #707070;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 5px;
+}
+
+.navbar-nav>.btnme {
+    background: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px 20px 20px 20px;
+    font-size: 15px;
+    border-radius: 50px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2), -3px -3px 8px white;
+}
+
+.navbar-nav>.btn-navbar {
+    color: #e84118;
+}
+
+.navbar-nav>.btn-navbar:hover {
+    color: white;
+    background: #e84118;
+}
+
+.navbar-nav>.nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid #e84118;
+    border-radius: 10px 10px 0px 0px;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+}
+
+html,
+body,
+header,
+.view {
+    scroll-behavior: smooth;
+}
+
+
+/* =={ Konten 1A }== */
+
+.working-area>.content-area>.area-left {
+    margin-top: 210px;
+    float: left;
+}
+
+.working-area>.content-area>.area-left>span {
+    color: #e84118;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 7px 7px;
+    border-radius: 10px 10px 10px 10px;
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.working-area>.content-area>.area-left>.message-covid-1 {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 38px;
+    color: #4f4f4f;
+}
+
+.working-area>.content-area>.area-left>.desc-covid-1 {
+    margin-top: 20px;
+    margin-left: 5px;
+    font-size: 12px;
+    color: #7a7a8f;
+}
+
+.working-area>.content-area>.area-left>.btnme2 {
+    margin-top: 10px;
+    background: none;
+    margin-left: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0px 20px 20px 20px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2), -3px -3px 8px white;
+}
+
+.working-area>.content-area>.area-left>.btn-symptoms {
+    color: #e84118;
+}
+
+.working-area>.content-area>.area-left>.btn-symptoms:hover {
+    background: #e84118;
+    color: white;
+}
+
+
+/* =={ Konten 1B }== */
+
+.working-area>.content-area>.area-right {
+    margin-top: 40px;
+}
+
+
+/* =={ Data-Content Human Infection }== */
+
+.data-working>.data-content>.area-centre {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.data-working>.data-content>.area-centre>.data-statistic>img {
+    margin-top: 5px;
+    box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.1), -20px -20px 60px #ffffff;
+    border-radius: 50px;
+}
+
+.data-working>.list-data>.data-center {
+    text-align: center;
+    margin-top: -155px;
+}
+
+.data-working>.list-data>.data-center>.counter>.data-value-1 {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.data-working>.list-data>.data-center>.counter>.data-value {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.data-working>.list-data>.data-center>.counter>.data-desc {
+    margin-top: 30px;
+}
+
+.data-working>.data-content>.area-centre2>.data-source>.source-value>.source {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    font-style: italic;
+    margin-top: -30px;
+    color: #7a7a8f;
+}
+
+
+/* =={Content 2}== */
+
+.area-working2nd>.content2nd>.dist2nd>img {
+    margin-top: 80px;
+}
+
+.area-working2nd>.content2nd>.dist2nd-right {
+    margin-top: 120px;
+}
+
+.area-working2nd>.content2nd>.dist2nd-right {
+    margin-left: 90px;
+}
+
+.area-working2nd>.content2nd>.dist2nd-right>span {
+    color: #e84118;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 7px 7px;
+    border-radius: 10px 10px 10px 10px;
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.area-working2nd>.content2nd>.dist2nd-right>.message-covid-2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #e84118;
+    margin-top: 10px;
+}
+
+.area-working2nd>.content2nd>.dist2nd-right>.title-covid-2 {
+    font-size: 38px;
+    font-weight: 600;
+    color: #4f4f4f;
+    margin-top: -10px;
+}
+
+.area-working2nd>.content2nd>.dist2nd-right>.desc-covid-2 {
+    font-size: 14px;
+    color: #7a7a8f;
+    letter-spacing: 0px;
+    margin-top: 15px;
+}
+
+.area-working2nd>.content2nd>.dist2nd-right>.desc-covid-2nd {
+    font-size: 14px;
+    color: #7a7a8f;
+    letter-spacing: 0px;
+    margin-top: 10px;
+}
+
+.area-working2nd>.content2nd>.dist2nd-right>.btnme3 {
+    margin-top: 10px;
+    background: none;
+    margin-left: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0px 20px 20px 20px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2), -3px -3px 8px white;
+}
+
+.area-working2nd>.content2nd>.dist2nd-right>.btn-symptoms2 {
+    color: #e84118;
+}
+
+.area-working2nd>.content2nd>.dist2nd-right>.btn-symptoms2:hover {
+    background: #e84118;
+    color: white;
+}
+
+
+/* =={Content 3}== */
+
+.area-working3rd>.content3rd>.dist3rd-left {
+    margin-top: 150px;
+}
+
+.area-working3rd>.content3rd>.dist3rd-left>span {
+    color: #e84118;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 7px 7px;
+    border-radius: 10px 10px 10px 10px;
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.area-working3rd>.content3rd>.dist3rd-left>.title-covid-3 {
+    font-size: 38px;
+    font-weight: 600;
+    color: #4f4f4f;
+    margin-top: 15px;
+}
+
+.area-working3rd>.content3rd>.dist3rd-left>.desc-covid-3 {
+    font-size: 14px;
+    color: #7a7a8f;
+    margin-top: 15px;
+}
+
+.area-working3rd>.content3rd>.dist3rd-left>.list-symptoms>.symptoms {
+    margin-top: 18px;
+    color: #4f4f4f;
+}
+
+.area-working3rd>.content3rd>.dist3rd-left>.list-symptoms>.symptoms>i {
+    color: #4cd137;
+}
+
+.area-working3rd>.content3rd>.dist3rd-left>.list-symptoms2 {
+    margin-left: 100px;
+}
+
+.area-working3rd>.content3rd>.dist3rd-left>.list-symptoms2>.symptoms2 {
+    margin-top: 18px;
+    color: #4f4f4f;
+}
+
+.area-working3rd>.content3rd>.dist3rd-left>.list-symptoms2>.symptoms2>i {
+    color: #4cd137;
+}
+
+
+/* =={Content 3B}== */
+
+.area-working3rd>.content3rd>.dist3rd-right>img {
+    margin-top: 130px;
+}
+
+
+/* =={Content 4}== */
+
+.jumbotron {
+    margin-top: 110px;
+}
+
+.jumbotron>.card-content>.area-working4th>.content2-4th {
+    margin-top: 80px;
+}
+
+.jumbotron>.card-content>.area-working4th>.content2-4th>span {
+    color: #e84118;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 7px 7px;
+    border-radius: 10px 10px 10px 10px;
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.jumbotron>.card-content>.area-working4th>.content2-4th>.title-covid-4 {
+    font-size: 38px;
+    font-weight: 600;
+    color: #4f4f4f;
+    margin-top: 15px;
+}
+
+.jumbotron>.card-content>.area-working4th>.content2-4th>.desc-covid-4 {
+    font-size: 14px;
+    color: #7a7a8f;
+    margin-top: 15px;
+}
+
+.jumbotron>.card-content>.area-working4th>.content2-4th>.list-pontagion {
+    margin-top: 40px;
+}
+
+.jumbotron>.card-content>.area-working4th>.content2-4th>.list-pontagion>.pontagion {
+    margin-top: 18px;
+    color: #4f4f4f;
+}
+
+.jumbotron>.card-content>.area-working4th>.content2-4th>.list-pontagion>.pontagion>i {
+    color: #4cd137;
+}
+
+
+/* =={Card Style}== */
+
+.jumbotron>.card-content>.area-working4th>.content1-4th>.card-area1>.card1st>.card {
+    border-radius: 20px;
+    border: none;
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.1), -20px -20px 40px #ffffff;
+    transition: 0.8s;
+}
+
+.jumbotron>.card-content>.area-working4th>.content1-4th>.card-area1>.card1st>.card:hover {
+    transform: translateY(-20px);
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.1), -20px -20px 40px #ffffff;
+}
+
+.jumbotron>.card-content>.area-working4th>.content1-4th>.card-area2>.card2nd>.card {
+    border-radius: 20px;
+    border: none;
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.1), -20px -20px 40px #ffffff;
+    transition: 0.8s;
+}
+
+.jumbotron>.card-content>.area-working4th>.content1-4th>.card-area2>.card2nd>.card:hover {
+    transform: translateY(-20px);
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.1), -20px -20px 40px #ffffff;
+}
+
+
+/* =={ Content 5 }== */
+
+.area-working5th>.content-area-5th>.content-backup>span {
+    color: #e84118;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 7px 7px;
+    border-radius: 10px 10px 10px 10px;
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.area-working5th>.content-area-5th>.content5th>.title-covid-5 {
+    font-size: 38px;
+    font-weight: 600;
+    color: #4f4f4f;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.area-working5th>.content-area-5th>.content5th>.desc-covid-5 {
+    font-size: 14px;
+    color: #7a7a8f;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+/* =={ Content 5-Card}== */
+
+.area-working5th>.card-content>.card-long {
+    margin-top: 80px;
+}
+
+.area-working5th>.card-content>.card-long>.card-image>img {
+    margin-left: 30px;
+}
+
+.area-working5th>.card-content>.card-long>.card-image {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.1), -20px -20px 40px #ffffff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transition: 0.8s;
+}
+
+.area-working5th>.card-content>.card-long>.card-image:hover {
+    transform: translateX(-20px);
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.1), -20px -20px 40px #ffffff;
+}
+
+.area-working5th>.card-content>.card-long>.card-image>.card-content>.card-title {
+    font-size: 24px;
+    color: #4f4f4f;
+    font-weight: 600;
+}
+
+.area-working5th>.card-content>.card-long>.card-image>.card-content>.card-desc {
+    font-size: 13px;
+    color: #7a7a8f;
+}
+
+
+/* ==[Card2]== */
+
+.area-working5th>.card-content2>.card-long2>.card-image>img {
+    margin-left: 30px;
+}
+
+.area-working5th>.card-content2>.card-long2>.card-image {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.1), -10px -10px 40px #ffffff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transition: 0.8s;
+}
+
+.area-working5th>.card-content2>.card-long2>.card-image:hover {
+    transform: translateX(-20px);
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.1), -10px -10px 40px #ffffff;
+}
+
+.area-working5th>.card-content2>.card-long2>.card-image>.card-content>.card-title {
+    font-size: 24px;
+    color: #4f4f4f;
+    font-weight: 600;
+}
+
+.area-working5th>.card-content2>.card-long2>.card-image>.card-content>.card-desc {
+    font-size: 13px;
+    color: #7a7a8f;
+}
+
+
+/* ==[Card 3]== */
+
+.area-working5th>.card-content3>.card-long3>.card-image>img {
+    margin-left: 30px;
+}
+
+.area-working5th>.card-content3>.card-long3>.card-image {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.1), -10px -10px 40px #ffffff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transition: 0.8s;
+}
+
+.area-working5th>.card-content3>.card-long3>.card-image:hover {
+    transform: translateX(-20px);
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.1), -20px -20px 40px #ffffff;
+}
+
+.area-working5th>.card-content3>.card-long3>.card-image>.card-content>.card-title {
+    font-size: 24px;
+    color: #4f4f4f;
+    font-weight: 600;
+}
+
+.area-working5th>.card-content3>.card-long3>.card-image>.card-content>.card-desc {
+    font-size: 13px;
+    color: #7a7a8f;
+}
+
+
+/* =={Footer}== */
+
+.container>.area-footer>.footer-content {
+    margin-top: 100px;
+    height: 274px;
+    background: white;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    position: relative;
+}
+
+.container>.area-footer>.footer-content>.title-covid-6 {
+    font-size: 42px;
+    font-weight: 600;
+    color: #4f4f4f;
+    margin-top: 45px;
+    text-align: center;
+}
+
+.container>.area-footer>.footer-content>.desc-covid-6 {
+    font-size: 14px;
+    color: #7a7a8f;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.container>.area-footer>.footer-content>.btn-footer {
+    margin-top: 30px;
+}
+
+
+/* BTN-Call 1 */
+
+.container>.area-footer>.footer-content>.btn-footer>.btn-double>.btnme4a {
+    background: none;
+    padding: 15px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.8s;
+    overflow: hidden;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2), -3px -3px 8px white;
+}
+
+.container>.area-footer>.footer-content>.btn-footer>.btn-double>.btn-call {
+    color: #e84118;
+}
+
+.container>.area-footer>.footer-content>.btn-footer>.btn-double>.btn-call:hover {
+    background: #e84118;
+    color: white;
+    transform: translateX(-20px) translateY(10px);
+}
+
+
+/* BTN-Call2 */
+
+.container>.area-footer>.footer-content>.btn-footer>.btn-double2>.btnme4b {
+    background: #e84118;
+    padding: 15px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.8s;
+    overflow: hidden;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2), -3px -3px 8px white;
+}
+
+.container>.area-footer>.footer-content>.btn-footer>.btn-double2>.btn-call2 {
+    color: white;
+}
+
+.container>.area-footer>.footer-content>.btn-footer>.btn-double2>.btn-call2:hover {
+    transform: translateX(20px) translateY(10px);
+    background: none;
+    color: #e84118;
+}
+
+
+/* footer */
+
+.footersection {
+    margin-top: -100px;
+    width: 100%;
+    height: 501px;
+    padding: 70px 0 20px 0;
+    background: #161c44;
+    position: relative;
+    z-index: -1;
+}
+
+.footersection>.container>.footer-side>.content>.desc-covid-footer {
+    margin-top: 15px;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footersection>.container>.footer-side>.footer-div>div li {
+    color: white;
+}
+
+
+/* ============[ Data Statistic COVID-19 Page ]============ */
+
+.navbar>.container>.btn2b {
+    background: none;
+    padding: 8px 20px;
+    cursor: pointer;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px 20px 20px 20px;
+    font-size: 15px;
+    border-radius: 50px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2), -3px -3px 8px white;
+}
+
+.navbar>.container>.btn-navbar2b {
+    color: #e84118;
+}
+
+.navbar>.container>.btn-navbar2b:hover {
+    color: white;
+    background: #e84118;
+}
+
+.area-data-covid {
+    margin-top: 70px;
+}
+
+
+/* ============[ Form-Pelaporan COVID-19 Page ]============ */
+
+.navbar>.container>.btn3c {
+    background: none;
+    padding: 8px 20px;
+    cursor: pointer;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px 20px 20px 20px;
+    font-size: 15px;
+    border-radius: 50px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2), -3px -3px 8px white;
+}
+
+.navbar>.container>.btn-navbar3c {
+    color: #e84118;
+}
+
+.navbar>.container>.btn-navbar3c:hover {
+    color: white;
+    background: #e84118;
+}
+
+.area-data-covid {
+    margin-top: 70px;
+}
+
+.container>.content-page3>.page3>span {
+    color: #e84118;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 7px 7px;
+    border-radius: 10px 10px 10px 10px;
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.container>.content-page3>.page3>.title-covid-page3 {
+    font-size: 45px;
+    font-weight: 600;
+    color: #4f4f4f;
+    margin-top: -10px;
+}
+
+.container>.content-page3>.page3>.desc-covid-page3 {
+    margin-left: 5px;
+    font-size: 12px;
+    color: #7a7a8f;
+}
+
+.container>.main-form>.content-infected>.users>.title-report-page3 {
+    margin-top: 20px;
+    font-size: 35px;
+    font-weight: 600;
+    color: #4f4f4f;
+}
+
+.container>.main-form>.content-infected>.users>.desc-infected-page3 {
+    margin-left: 5px;
+    font-size: 12px;
+    color: #7a7a8f;
+}
+
+.container>.main-form>.content-infected {
+    margin-left: 30px;
+}
+
+.container>.main-form>.btn-custom {
+    padding: 5px 10px;
+    width: 100px;
+}
+
+
+/* {{-- == Data Table Covid == --}} */
+
+.area-data-covid .dataContentTitle {
+    margin-top: 40px;
+}
+
+.area-data-covid .dataContentTitle .covidIndo span {
+    color: #e84118;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 7px 7px;
+    border-radius: 10px 10px 10px 10px;
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.area-data-covid>.dataContentTitle>.covidIndo>.covidTitle {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 35px;
+    color: #4f4f4f;
+}
+
+.area-data-covid>.dataContentTitle>.covidIndo>.covidMessage {
+    font-size: 12px;
+    color: #7a7a8f;
+    letter-spacing: 0px;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+
+/*{{-- == Data Table Covid CARD== --}}*/
+
+.datacard .cardWorking .cardReport .content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.dataCard .cardWorking .listCard .cardReport {
+    background: url("/assets/Dist/Icon/Chart.png");
+    background-size: cover;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1), -3px -3px 15px #ffffff;
+    border-radius: 10px !important;
+    transition: 0.8s;
+}
+
+.dataCard .cardWorking .listCard .cardReport:hover {
+    transform: translateY(-10px);
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1), -3px -3px 15px #ffffff;
+}
+
+.dataCard .cardWorking .listCard .cardReport .content img {
+    margin-top: 5px;
+    float: left;
+    margin-right: 12px;
+}
+
+.dataCard .cardWorking .listCard .cardReport .content .title-items {
+    font-size: 18px;
+    margin-top: 5px;
+    color: #21272c;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.dataCard .cardWorking .listCard .cardReport .content .subtitle-items {
+    font-size: 13px;
+    color: #b4b4b4;
+    font-weight: 300;
+    margin-top: -15px;
+    margin-left: 10px;
+}
+
+.dataCard .cardWorking .listCard .cardReport .content .value-items {
+    font-size: 38px;
+    color: #21272c;
+    font-weight: 600;
+    margin: 0;
+    clear: both;
+    float: left;
+    margin-right: 10px;
+}
+
+.dataCard .cardWorking .listCard .cardReport .content .desc-items {
+    font-size: 18px;
+    color: #b4b4b4;
+    font-weight: 300;
+    margin: 0;
+    margin-top: 25px;
+}
+
+.container .cardContent2 .card {
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: none;
+}
